@@ -1,0 +1,51 @@
+﻿* {
+    font-family: 'Droid Arabic Kufi', 'Lato', sans-serif;
+}
+
+.lower-footer-img {
+    right: 185px !important;
+}
+
+.home-user-login-span-1 {
+    right: 28px !important;
+    left: 0px !important;
+}
+
+.home-user-login-span-2 {
+    left: 14px !important;
+    right: -18px !important;
+}
+
+.home-search-dropdown-small {
+    background-position: 5px !important;
+    margin-left: 12px;
+}
+
+.home-search-dropdown-big {
+    background-position: 5px !important;
+    margin-left: 12px;
+}
+
+.home-main-star-person {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.home-main-star-person-text {
+    margin-right: -32px !important;
+    margin-left: -32px !important;
+}
+
+.home-main-star-person-text-name{
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.home-main-star-person-text-info{
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 0px !important;
+    padding-right: 6px !important;
+    padding-left: 0px !important;
+}

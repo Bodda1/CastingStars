@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+<div class="home">
+    <div class="container">
+        <div class="row home_section_1">
+            <div class="col-md-6 home-text-1">
+                @CastingStars.Resources.Resources.Home_Text_1 <br /> <strong> @CastingStars.Resources.Resources.Home_Text_2 </strong> <br /> @CastingStars.Resources.Resources.Home_Text_3
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12 home-user-text">
+                    @CastingStars.Resources.Resources.Home_User_Text
+                </div>
+                @if (User.Identity.Name == "" || !User.Identity.IsAuthenticated)
+                {
+                    <div class="col-md-12 home-user">
+                        <a class="home-user-login-button" href="#"><span class="home-user-login-span-1">@CastingStars.Resources.Resources.Home_User_Login_1</span> <span class="home-user-login-span-2">@CastingStars.Resources.Resources.Home_User_Login_2</span></a>
+                        <a class="home-user-register-button" href="#">@CastingStars.Resources.Resources.Home_User_Register</a>
+                    </div>
+                }
+                else if (HttpContext.Current.Session["Email"] == null)
+                {
+                    <div class="col-md-12 home-user">
+                        <a class="home-user-login-button" href="#"><span class="home-user-login-span-1">@CastingStars.Resources.Resources.Home_User_Login_1</span> <span class="home-user-login-span-2">@CastingStars.Resources.Resources.Home_User_Login_2</span></a>
+                        <a class="home-user-register-button" href="#">@CastingStars.Resources.Resources.Home_User_Register</a>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="row home-section-2">
+            <div class="col-md-12 home-search-text">
+                @CastingStars.Resources.Resources.Home_Search_Text_1 <br /> <strong> @CastingStars.Resources.Resources.Home_Search_Text_2 </strong> @CastingStars.Resources.Resources.Home_Search_Text_3
+            </div>
+            <div class="col-md-12 container home-search">
+                <select id="selectOne" name="role" onchange="selectOne(this);" class="col-md-3 home-search-dropdown-big">
+                    <option value="" disabled selected>test</option>
+                    <option value="test">test</option>
+                </select>
+                <select disabled id="selectTwo" name="role" class="col-md-2 home-search-dropdown-small home-search-dropdown-disabled">
+                </select>
+                <select disabled id="role" name="role" class="col-md-3 home-search-dropdown-big home-search-dropdown-disabled">
+                </select>
+                <select disabled id="role" name="role" class="col-md-2 home-search-dropdown-small home-search-dropdown-disabled">
+                </select>
+                <div class="home-user-search-button-div"><a class="home-user-search-button" href="#">@CastingStars.Resources.Resources.Home_Search_Button</a></div>
+            </div>
+        </div>
+        <div class="row home-main-row">
+            <div class="col-md-3 home-main-star">
+                <img src="~/Content/images/homeStarRed.png" />
+                <div class="home-main-star-text">our featured <br /><strong>talents</strong></div>
+                <div class="home-main-star-button-div"><a class="home-main-star-button" href="#">@CastingStars.Resources.Resources.Home_User_Register</a></div>
+            </div>
+            <div class="col-md-9">
+                @Html.Partial("_HomePersonFullPartial")
+                <div class="clearfix home-main-clear"></div>
+                @Html.Partial("_HomePersonFullPartial")
+            </div>
+        </div>
+        <div class="row home-main-row">
+            <div class="col-md-3 home-main-star">
+                <img src="~/Content/images/homeStarGold.png" />
+                <div class="home-main-star-text-gold">our featured <br /><strong>crew</strong></div>
+                <div class="home-main-star-button-div"><a class="home-main-star-button-gold" href="#">@CastingStars.Resources.Resources.Home_User_Register</a></div>
+            </div>
+            <div class="col-md-9">
+                @Html.Partial("_HomePersonFullPartialGold")
+                <div class="clearfix home-main-clear"></div>
+                @Html.Partial("_HomePersonFullPartialGold")
+            </div>
+        </div>
+        <div class="row home-main-row">
+            <div class="col-md-3 home-main-star">
+                <img src="~/Content/images/homeStarSilver.png" />
+                <div class="home-main-star-text-silver">our featured <br /><strong>locations</strong></div>
+                <div class="home-main-star-button-div"><a class="home-main-star-button-silver" href="#">@CastingStars.Resources.Resources.Home_User_Register</a></div>
+            </div>
+            <div class="col-md-9">
+                @Html.Partial("_HomePersonFullPartialSilver")
+                <div class="clearfix home-main-clear"></div>
+                @Html.Partial("_HomePersonFullPartialSilver")
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function selectOne(e) {
+        var selected = $(e).val();
+        $("#selectTwo").removeAttr("disabled");
+        $("#selectTwo").removeClass("home-search-dropdown-disabled");
+        $("#selectTwo").append('<option value="" disabled selected>test</option> <option value="test">test</option>');
+    }
+</script>

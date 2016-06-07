@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - CastingStars</title>
+    <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'>
+    <link href="~/Content/css/Site.css" rel="stylesheet" type="text/css" />
+    @Html.Raw(CastingStars.Helpers.CultureHelper.IsRightToLeft() ? "<link href='/Content/css/Site-rtl.css' rel='stylesheet' type='text/css' />" : "")
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    @Html.Raw(CastingStars.Helpers.CultureHelper.IsRightToLeft() ? "<link href='/Content/css/bootstrap-rtl.min.css' rel='stylesheet' type='text/css' />" : "")
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Content/scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Content/scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/scripts/bootstrap.min.js"></script>
+    @RenderSection("Header", false)
+</head>
+<body>
+    <div class="navbar navbar-default top-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed navigation-bar-button" data-toggle="collapse" data-target="#sidebar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img src="~/Content/images/logo.png" />
+                </a>
+            </div>
+            <div id="sidebar-menu" class="navbar-collapse collapse sidebar sidebar-animate sidebar-show-lg">
+                <ul class="nav navbar-nav navigation-bar @(CastingStars.Helpers.CultureHelper.IsRightToLeft()? "navbar-left":"navbar-right")">
+                    @if (CastingStars.Helpers.CultureHelper.GetCurrentCulture() == "en")
+                    {
+                        <li class="lang-url-li"><a class="lang-url" style="padding: 2px 8px !important; margin-top: 27px;" href="/ar/@CastingStars.Helpers.CultureHelper.GetCurrentURLWithoutCulture(Request.Url.AbsoluteUri)">عربى</a></li>
+                    }
+                    else if (CastingStars.Helpers.CultureHelper.GetCurrentCulture() == "ar")
+                    {
+                        <li class="lang-url-li"><a class="lang-url" style="padding: 2px 8px !important; margin-top: 27px;" href="/en/@CastingStars.Helpers.CultureHelper.GetCurrentURLWithoutCulture(Request.Url.AbsoluteUri)">EN</a></li>
+                    }
+                    <li @(ViewBag.page == "home" ? "class=active-bar" : "")><a href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()">@CastingStars.Resources.Resources.Home_Nav</a></li>
+                    <li @(ViewBag.page == "about" ? "class=active-bar" : "")><a href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/about">@CastingStars.Resources.Resources.About_Nav</a></li>
+                    <li @(ViewBag.page == "membership" ? "class=active-bar" : "")><a href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/membership">@CastingStars.Resources.Resources.Membership_Nav</a></li>
+                    <li @(ViewBag.page == "talent" ? "class=active-bar" : "")><a href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/talent">@CastingStars.Resources.Resources.Talents_Nav</a></li>
+                    <li @(ViewBag.page == "crew" ? "class=active-bar" : "")><a href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/crew">@CastingStars.Resources.Resources.Crew_Nav</a></li>
+                    <li @(ViewBag.page == "location" ? "class=active-bar" : "")><a href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/location">@CastingStars.Resources.Resources.Locations_Nav</a></li>
+                    <li @(ViewBag.page == "voice" ? "class=active-bar" : "")><a href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/voice">@CastingStars.Resources.Resources.Voice_Nav</a></li>
+                    <li @(ViewBag.page == "contact" ? "class=active-bar" : "")><a href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/contact">@CastingStars.Resources.Resources.Contact_Nav</a></li>
+                    <li class="header-icons"><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li class="header-icons"><a href="#"><i class="fa fa-share-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @if (User.Identity.Name != "" || User.Identity.IsAuthenticated)
+        {
+            <div class="bottom-header">
+                <div class="container">
+                    <div class="@(CastingStars.Helpers.CultureHelper.IsRightToLeft()? "navbar-left":"navbar-right")">
+                        <a class="bottom-header-user" href="#">@CastingStars.Resources.Resources.Welcome_User, <strong>User.Identity.Name</strong></a>
+                        <a class="bottom-header-button" href="#">@CastingStars.Resources.Resources.My_List_User</a>
+                        <a class="bottom-header-button" href="#">@CastingStars.Resources.Resources.Logout_User</a>
+                    </div>
+                </div>
+            </div>
+    }
+    else if (HttpContext.Current.Session["Email"] != null)
+        {
+            <div class="bottom-header">
+                <div class="container">
+                    <div class="@(CastingStars.Helpers.CultureHelper.IsRightToLeft()? "navbar-left":"navbar-right")">
+                        <a class="bottom-header-user" href="#">@CastingStars.Resources.Resources.Welcome_User, <strong>@HttpContext.Current.Session["Email"].ToString()</strong></a>
+                        <a class="bottom-header-button" href="#">@CastingStars.Resources.Resources.My_List_User</a>
+                        <a class="bottom-header-button" href="#">@CastingStars.Resources.Resources.Logout_User</a>
+                    </div>
+                </div>
+            </div>
+        }
+    <div class="">
+        @RenderBody()
+    </div>
+    <footer>
+        
+        <div class="upper-footer">
+            <div class="container">
+                <div class="col-md-3 col-sm-1 col-xs-1">
+                </div>
+                <div class="col-md-5 col-sm-7 col-xs-12 upper-footer-text">
+                    <strong class="upper-footer-text-strong">@CastingStars.Resources.Resources.Upper_Footer_Text_1</strong> <br /> @CastingStars.Resources.Resources.Upper_Footer_Text_2 <br /> @CastingStars.Resources.Resources.Upper_Footer_Text_3
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <img class="upper-footer-img" src="~/Content/images/appStore.png" />
+                    <img class="upper-footer-lower-img" src="~/Content/images/googlePlay.png" />
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class="container">
+                <div class="col-md-5 col-sm-1 col-xs-1">
+                </div>
+                <div class="col-md-4 col-sm-7 col-xs-12 lower-footer-text">
+                    <strong class="lower-footer-text-strong">@CastingStars.Resources.Resources.Lower_Footer_Text_1</strong> <br /> @CastingStars.Resources.Resources.Lower_Footer_Text_2
+                    <div class="lower-footer-icon-div">
+                        <a href="#"><img class="lower-footer-icon" src="~/Content/images/facebook.png" /></a>
+                        <a href="#"><img class="lower-footer-icon" src="~/Content/images/twitter.png" /></a>
+                        <a href="#"><img class="lower-footer-icon" src="~/Content/images/youtube.png" /></a>
+                        <a href="#"><img class="lower-footer-icon" src="~/Content/images/instagram.png" /></a>
+                        <a href="#"><img class="lower-footer-icon" src="~/Content/images/Vemo.png" /></a>
+                    </div>
+                    <div class="footer-links">
+                        <a class="footer-links-items" href="#">@CastingStars.Resources.Resources.Terms_Of_Service</a>
+                        <a class="footer-links-items" href="#">@CastingStars.Resources.Resources.Special_Terms</a>
+                        <a class="footer-links-items" href="#">@CastingStars.Resources.Resources.Privacy_Policy</a>
+                    </div>
+
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <img class="lower-footer-logo" src="~/Content/images/logoFooter.png" />
+                </div>
+            </div>
+        </div>
+        <img class="lower-footer-img" src="~/Content/images/phone.png" />
+    </footer>
+</body>
+</html>
