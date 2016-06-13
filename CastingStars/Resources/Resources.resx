@@ -126,6 +126,27 @@
   <data name="Crew_Nav" xml:space="preserve">
     <value>Crew</value>
   </data>
+  <data name="Forgot_Button" xml:space="preserve">
+    <value>RESET</value>
+  </data>
+  <data name="Home_Crew" xml:space="preserve">
+    <value>crew</value>
+  </data>
+  <data name="Home_Featured" xml:space="preserve">
+    <value>our featured</value>
+  </data>
+  <data name="Home_Locations" xml:space="preserve">
+    <value>locations</value>
+  </data>
+  <data name="Home_More_Crew" xml:space="preserve">
+    <value>more crew</value>
+  </data>
+  <data name="Home_More_Locations" xml:space="preserve">
+    <value>more locations</value>
+  </data>
+  <data name="Home_More_Talents" xml:space="preserve">
+    <value>more talents</value>
+  </data>
   <data name="Home_Nav" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -140,6 +161,9 @@
   </data>
   <data name="Home_Search_Text_3" xml:space="preserve">
     <value>roles for all ages, looks &amp; levels of experience</value>
+  </data>
+  <data name="Home_Talents" xml:space="preserve">
+    <value>talents</value>
   </data>
   <data name="Home_Text_1" xml:space="preserve">
     <value>the first</value>
@@ -165,6 +189,24 @@
   <data name="Locations_Nav" xml:space="preserve">
     <value>Locations</value>
   </data>
+  <data name="Login_Button" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="Login_Forgot_pass" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="Login_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Login_Register" xml:space="preserve">
+    <value>Register Now</value>
+  </data>
+  <data name="Login_Remember" xml:space="preserve">
+    <value>Remember Me</value>
+  </data>
+  <data name="Login_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
   <data name="Logout_User" xml:space="preserve">
     <value>Logout</value>
   </data>
@@ -182,6 +224,75 @@
   </data>
   <data name="Privacy_Policy" xml:space="preserve">
     <value>Privacy Policy</value>
+  </data>
+  <data name="Profile_Agency_Link" xml:space="preserve">
+    <value>Agent Profile</value>
+  </data>
+  <data name="Profile_Audio" xml:space="preserve">
+    <value>Audio Player</value>
+  </data>
+  <data name="Profile_Crew_Link" xml:space="preserve">
+    <value>Crew Profile</value>
+  </data>
+  <data name="Profile_Edit_Picture" xml:space="preserve">
+    <value>Edit Profile Picture</value>
+  </data>
+  <data name="Profile_Form_Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Profile_Form_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Profile_Form_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Profile_Form_Surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="Profile_Form_Title" xml:space="preserve">
+    <value>BASIC FORM</value>
+  </data>
+  <data name="Profile_Location_Link" xml:space="preserve">
+    <value>Location Profile</value>
+  </data>
+  <data name="Profile_Pastwork" xml:space="preserve">
+    <value>Past Work (Portfolio)</value>
+  </data>
+  <data name="Profile_Personal_Information" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="Profile_Photo" xml:space="preserve">
+    <value>Photo Gallery</value>
+  </data>
+  <data name="Profile_Professional_Information" xml:space="preserve">
+    <value>Professional Information</value>
+  </data>
+  <data name="Profile_Professional_Type" xml:space="preserve">
+    <value>Professional Type</value>
+  </data>
+  <data name="Profile_Progress" xml:space="preserve">
+    <value>Profile Progress</value>
+  </data>
+  <data name="Profile_Talent_Link" xml:space="preserve">
+    <value>Talent Profile</value>
+  </data>
+  <data name="Profile_Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="Profile_Video" xml:space="preserve">
+    <value>Video Reel</value>
+  </data>
+  <data name="Profile_Warning" xml:space="preserve">
+    <value>Warning Message</value>
+  </data>
+  <data name="Register_Button" xml:space="preserve">
+    <value>REGISTER</value>
+  </data>
+  <data name="Register_Confirm" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Register_Email" xml:space="preserve">
+    <value>Email</value>
   </data>
   <data name="Special_Terms" xml:space="preserve">
     <value>Special Terms</value>

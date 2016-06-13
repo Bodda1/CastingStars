@@ -15,14 +15,14 @@
                 @if (User.Identity.Name == "" || !User.Identity.IsAuthenticated)
                 {
                     <div class="col-md-12 home-user">
-                        <a class="home-user-login-button" href="#"><span class="home-user-login-span-1">@CastingStars.Resources.Resources.Home_User_Login_1</span> <span class="home-user-login-span-2">@CastingStars.Resources.Resources.Home_User_Login_2</span></a>
-                        <a class="home-user-register-button" href="#">@CastingStars.Resources.Resources.Home_User_Register</a>
+                        <a class="home-user-login-button" href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/login"><span class="home-user-login-span-1">@CastingStars.Resources.Resources.Home_User_Login_1</span> <span class="home-user-login-span-2">@CastingStars.Resources.Resources.Home_User_Login_2</span></a>
+                        <a class="home-user-register-button" href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/signup">@CastingStars.Resources.Resources.Home_User_Register</a>
                     </div>
                 }
                 else if (HttpContext.Current.Session["Email"] == null)
                 {
                     <div class="col-md-12 home-user">
-                        <a class="home-user-login-button" href="#"><span class="home-user-login-span-1">@CastingStars.Resources.Resources.Home_User_Login_1</span> <span class="home-user-login-span-2">@CastingStars.Resources.Resources.Home_User_Login_2</span></a>
+                        <a class="home-user-login-button" href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/login"><span class="home-user-login-span-1">@CastingStars.Resources.Resources.Home_User_Login_1</span> <span class="home-user-login-span-2">@CastingStars.Resources.Resources.Home_User_Login_2</span></a>
                         <a class="home-user-register-button" href="#">@CastingStars.Resources.Resources.Home_User_Register</a>
                     </div>
                 }
@@ -49,8 +49,8 @@
         <div class="row home-main-row">
             <div class="col-md-3 home-main-star">
                 <img src="~/Content/images/homeStarRed.png" />
-                <div class="home-main-star-text">our featured <br /><strong>talents</strong></div>
-                <div class="home-main-star-button-div"><a class="home-main-star-button" href="#">@CastingStars.Resources.Resources.Home_User_Register</a></div>
+                <div class="home-main-star-text">@CastingStars.Resources.Resources.Home_Featured<br /><strong>@CastingStars.Resources.Resources.Home_Talents</strong></div>
+                <div class="home-main-star-button-div"><a class="home-main-star-button" href="#">@CastingStars.Resources.Resources.Home_More_Talents</a></div>
             </div>
             <div class="col-md-9">
                 @Html.Partial("_HomePersonFullPartial")
@@ -61,8 +61,8 @@
         <div class="row home-main-row">
             <div class="col-md-3 home-main-star">
                 <img src="~/Content/images/homeStarGold.png" />
-                <div class="home-main-star-text-gold">our featured <br /><strong>crew</strong></div>
-                <div class="home-main-star-button-div"><a class="home-main-star-button-gold" href="#">@CastingStars.Resources.Resources.Home_User_Register</a></div>
+                <div class="home-main-star-text-gold">@CastingStars.Resources.Resources.Home_Featured<br /><strong>@CastingStars.Resources.Resources.Home_Crew</strong></div>
+                <div class="home-main-star-button-div"><a class="home-main-star-button-gold" href="#">@CastingStars.Resources.Resources.Home_More_Crew</a></div>
             </div>
             <div class="col-md-9">
                 @Html.Partial("_HomePersonFullPartialGold")
@@ -73,14 +73,17 @@
         <div class="row home-main-row">
             <div class="col-md-3 home-main-star">
                 <img src="~/Content/images/homeStarSilver.png" />
-                <div class="home-main-star-text-silver">our featured <br /><strong>locations</strong></div>
-                <div class="home-main-star-button-div"><a class="home-main-star-button-silver" href="#">@CastingStars.Resources.Resources.Home_User_Register</a></div>
+                <div class="home-main-star-text-silver">@CastingStars.Resources.Resources.Home_Featured<br /><strong>@CastingStars.Resources.Resources.Home_Locations</strong></div>
+                <div class="home-main-star-button-div"><a class="home-main-star-button-silver" href="#">@CastingStars.Resources.Resources.Home_More_Locations</a></div>
             </div>
             <div class="col-md-9">
                 @Html.Partial("_HomePersonFullPartialSilver")
                 <div class="clearfix home-main-clear"></div>
                 @Html.Partial("_HomePersonFullPartialSilver")
             </div>
+        </div>
+        <div class="col-md-12 home-partner">
+            <img src="~/Content/images/homePartners.png" />
         </div>
     </div>
 </div>

@@ -126,6 +126,27 @@
   <data name="Crew_Nav" xml:space="preserve">
     <value>الفرق</value>
   </data>
+  <data name="Forgot_Button" xml:space="preserve">
+    <value>اعادة الضبط</value>
+  </data>
+  <data name="Home_Crew" xml:space="preserve">
+    <value>الفرق</value>
+  </data>
+  <data name="Home_Featured" xml:space="preserve">
+    <value>افضل</value>
+  </data>
+  <data name="Home_Locations" xml:space="preserve">
+    <value>الاماكن</value>
+  </data>
+  <data name="Home_More_Crew" xml:space="preserve">
+    <value>المزيد من الفرق</value>
+  </data>
+  <data name="Home_More_Locations" xml:space="preserve">
+    <value>المزيد من الاماكن</value>
+  </data>
+  <data name="Home_More_Talents" xml:space="preserve">
+    <value>المزيد من المواهب</value>
+  </data>
   <data name="Home_Nav" xml:space="preserve">
     <value>الرئيسية</value>
   </data>
@@ -140,6 +161,9 @@
   </data>
   <data name="Home_Search_Text_3" xml:space="preserve">
     <value>ادوار لجميع الاعمار والمظاهر و الخبرات </value>
+  </data>
+  <data name="Home_Talents" xml:space="preserve">
+    <value>المواهب</value>
   </data>
   <data name="Home_Text_1" xml:space="preserve">
     <value>اول موقع</value>
@@ -165,6 +189,24 @@
   <data name="Locations_Nav" xml:space="preserve">
     <value>الاماكن</value>
   </data>
+  <data name="Login_Button" xml:space="preserve">
+    <value>دخول</value>
+  </data>
+  <data name="Login_Forgot_pass" xml:space="preserve">
+    <value>نسيت كلمة السر</value>
+  </data>
+  <data name="Login_Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Login_Register" xml:space="preserve">
+    <value>سجل الان</value>
+  </data>
+  <data name="Login_Remember" xml:space="preserve">
+    <value>تذكرنى</value>
+  </data>
+  <data name="Login_Username" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
   <data name="Logout_User" xml:space="preserve">
     <value>خروج</value>
   </data>
@@ -182,6 +224,75 @@
   </data>
   <data name="Privacy_Policy" xml:space="preserve">
     <value>حقوق الملكية</value>
+  </data>
+  <data name="Profile_Agency_Link" xml:space="preserve">
+    <value>بيانات الوكالة</value>
+  </data>
+  <data name="Profile_Audio" xml:space="preserve">
+    <value>الصوتيات</value>
+  </data>
+  <data name="Profile_Crew_Link" xml:space="preserve">
+    <value>بيانات الفريق</value>
+  </data>
+  <data name="Profile_Edit_Picture" xml:space="preserve">
+    <value>تغيير الصورة الشخصية</value>
+  </data>
+  <data name="Profile_Form_Message" xml:space="preserve">
+    <value>الرسالة</value>
+  </data>
+  <data name="Profile_Form_Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="Profile_Form_Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Profile_Form_Surname" xml:space="preserve">
+    <value>اللقب</value>
+  </data>
+  <data name="Profile_Form_Title" xml:space="preserve">
+    <value>استمارة اساسية</value>
+  </data>
+  <data name="Profile_Location_Link" xml:space="preserve">
+    <value>بيانات المكان</value>
+  </data>
+  <data name="Profile_Pastwork" xml:space="preserve">
+    <value>الاعمال السابقة</value>
+  </data>
+  <data name="Profile_Personal_Information" xml:space="preserve">
+    <value>المعلومات الشخصية</value>
+  </data>
+  <data name="Profile_Photo" xml:space="preserve">
+    <value>معرض الصور</value>
+  </data>
+  <data name="Profile_Professional_Information" xml:space="preserve">
+    <value>المعلومات المهنية</value>
+  </data>
+  <data name="Profile_Professional_Type" xml:space="preserve">
+    <value>النوع المهنى</value>
+  </data>
+  <data name="Profile_Progress" xml:space="preserve">
+    <value>انهاء الملف</value>
+  </data>
+  <data name="Profile_Talent_Link" xml:space="preserve">
+    <value>بيانات الموهبة</value>
+  </data>
+  <data name="Profile_Upload" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="Profile_Video" xml:space="preserve">
+    <value>الفديوهات</value>
+  </data>
+  <data name="Profile_Warning" xml:space="preserve">
+    <value>رسالة تحذير</value>
+  </data>
+  <data name="Register_Button" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="Register_Confirm" xml:space="preserve">
+    <value>تاكيد كلمة السر</value>
+  </data>
+  <data name="Register_Email" xml:space="preserve">
+    <value>البريد الالكترونى</value>
   </data>
   <data name="Special_Terms" xml:space="preserve">
     <value>شروط خاصة</value>

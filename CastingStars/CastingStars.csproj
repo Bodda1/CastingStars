@@ -120,11 +120,20 @@
     <Content Include="Content\css\bootstrap-rtl.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\build.css" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\Site-rtl.css" />
     <Content Include="Content\css\Site.css" />
+    <Content Include="Content\images\agentFacebook.png" />
+    <Content Include="Content\images\agentInstagram.png" />
+    <Content Include="Content\images\agentLogo.png" />
+    <Content Include="Content\images\agentStar.png" />
+    <Content Include="Content\images\agentTwitter.png" />
+    <Content Include="Content\images\agentVemo.png" />
+    <Content Include="Content\images\agentYoutube.png" />
     <Content Include="Content\images\appStore.png" />
+    <Content Include="Content\images\avatar.png" />
     <Content Include="Content\images\facebook.png" />
     <Content Include="Content\images\googlePlay.png" />
     <Content Include="Content\images\homeDropdownBlack.png" />
@@ -137,11 +146,15 @@
     <Content Include="Content\images\homeStarRed.png" />
     <Content Include="Content\images\homeStarSilver.png" />
     <Content Include="Content\images\instagram.png" />
+    <Content Include="Content\images\key.png" />
     <Content Include="Content\images\Layer1.png" />
     <Content Include="Content\images\Layer2.png" />
+    <Content Include="Content\images\loginLogo.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\logoFooter.png" />
     <Content Include="Content\images\phone.png" />
+    <Content Include="Content\images\profileProgress.png" />
+    <Content Include="Content\images\profileStar.png" />
     <Content Include="Content\images\twitter.png" />
     <Content Include="Content\images\Vemo.png" />
     <Content Include="Content\images\youtube.png" />
@@ -183,7 +196,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="VM\Account\UserProfile.cs" />
+    <Compile Include="VM\Account\ForgotPasswordVM.cs" />
     <Compile Include="VM\Account\LoginVM.cs" />
+    <Compile Include="VM\Account\SignUpVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -202,6 +218,14 @@
     <Content Include="Views\Home\_HomePersonFullPartialGold.cshtml" />
     <Content Include="Views\Home\_HomePersonFullPartialSilver.cshtml" />
     <Content Include="Views\Home\_HomePersonPartialSilver.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\SignUp.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\AgentProfile.cshtml" />
+    <Content Include="Views\Account\TalentProfile.cshtml" />
+    <Content Include="Views\Account\CrewProfile.cshtml" />
+    <Content Include="Views\Account\LocationProfile.cshtml" />
+    <Content Include="Views\Account\AgentDashboard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -211,7 +235,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Account\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

@@ -49,3 +49,128 @@
     padding-right: 6px !important;
     padding-left: 0px !important;
 }
+
+.home-main-star-person-text-name-gold{
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.home-main-star-person-text-info-gold{
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 0px !important;
+    padding-right: 6px !important;
+    padding-left: 0px !important;
+}
+
+.home-main-star-person-text-name-silver{
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.home-main-star-person-text-info-silver{
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 0px !important;
+    padding-right: 6px !important;
+    padding-left: 0px !important;
+}
+
+.login-form .username {
+    background: url("/Content/images/avatar.png") no-repeat right;
+    background-position: 250px;
+}
+
+.login-form .password {
+    background: url("/Content/images/key.png") no-repeat right;
+    background-position: 250px;
+}
+
+input {
+    margin-bottom: 15px !important;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  padding-right: 40px !important;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  padding-right: 40px !important;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 40px !important;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  padding-right: 40px !important;
+}
+
+.checkbox-info {
+    text-align: right;
+    margin-right: -20px;
+    padding-left: 0px !important;
+}
+
+.check-label {
+    margin-top: -13px;
+    margin-right: 95px;
+}
+
+.login-link-register {
+    float: right !important;
+}
+
+.login-link-forgot {
+    float: left !important;
+}
+
+.login-link-register i {
+    padding-left: 8px !important;
+}
+
+.login-link-forgot i {
+    padding-left: 8px !important;
+}
+
+.profile-categories {
+    padding-right: 15px !important;
+    padding-left: 0px !important;
+}
+
+.profile-progress span {
+    margin-right: 65px;
+}
+
+.profile-warning i {
+    margin-left: 10px;
+}
+
+.profile-form {
+    height: 400px;
+}
+
+.profile-form-upload-button {
+    margin-left: 0px !important;
+    margin-right: 38px;
+}
+
+.overlay {
+    top: 80px;
+}
+
+.overlay-external {
+    left: 0px;
+    right: 10px;
+}
+
+.overlay-star {
+    left: 0px;
+    right: 150px;
+}
+
+.overlay-close {
+    left: 0px;
+    right: 129px;
+}
+
+.agent-margin {
+    margin-right: 65px;
+    margin-left: 0px;
+}
+

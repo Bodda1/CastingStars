@@ -10,12 +10,13 @@
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     @Html.Raw(CastingStars.Helpers.CultureHelper.IsRightToLeft() ? "<link href='/Content/css/bootstrap-rtl.min.css' rel='stylesheet' type='text/css' />" : "")
     <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/build.css" rel="stylesheet" type="text/css" />
     <script src="~/Content/scripts/modernizr-2.6.2.js"></script>
     <script src="~/Content/scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Content/scripts/bootstrap.min.js"></script>
     @RenderSection("Header", false)
 </head>
-<body>
+<body class="@ViewBag.background">
     <div class="navbar navbar-default top-header">
         <div class="container">
             <div class="navbar-header">
@@ -76,11 +77,11 @@
                 </div>
             </div>
         }
-    <div class="">
+    <div>
         @RenderBody()
     </div>
     <footer>
-        
+        <img class="lower-footer-img" src="~/Content/images/phone.png" />
         <div class="upper-footer">
             <div class="container">
                 <div class="col-md-3 col-sm-1 col-xs-1">
@@ -119,7 +120,6 @@
                 </div>
             </div>
         </div>
-        <img class="lower-footer-img" src="~/Content/images/phone.png" />
     </footer>
 </body>
 </html>

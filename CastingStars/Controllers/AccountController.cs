@@ -21,14 +21,71 @@ namespace CastingStars.Controllers
         }
 
 
-        public ActionResult AjaxLoginUser(LoginVM model)
+        public ActionResult Login ()
+        {
+            ViewBag.background = "body-bg-black";
+            return View();
+        }
+
+
+        public ActionResult SignUp()
+        {
+            ViewBag.background = "body-bg-black";
+            return View();
+        }
+
+
+        public ActionResult ForgotPassword()
+        {
+            ViewBag.background = "body-bg-black";
+            return View();
+        }
+
+
+        public ActionResult AgentProfile()
+        {
+            ViewBag.background = "body-bg-white";
+            return View();
+        }
+
+
+        public ActionResult TalentProfile()
+        {
+            ViewBag.background = "body-bg-white";
+            return View();
+        }
+
+
+        public ActionResult CrewProfile()
+        {
+            ViewBag.background = "body-bg-white";
+            return View();
+        }
+
+
+        public ActionResult LocationProfile()
+        {
+            ViewBag.background = "body-bg-white";
+            return View();
+        }
+
+
+        public ActionResult AgentDashboard()
+        {
+            ViewBag.background = "body-bg-black";
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Login(LoginVM model)
         {
             if (!ModelState.IsValid)
             {
                 int x = 1;
                 return Json(new { x = x }, JsonRequestBehavior.AllowGet);
             }
-            bool isAuthenticated = _ur.isValidPassword(model.Email, model.Password);
+            bool isAuthenticated = _ur.isValidPassword(model.Username, model.Password);
             if (!isAuthenticated)
             {
                 int x = 2;
@@ -36,23 +93,65 @@ namespace CastingStars.Controllers
             }
             else
             {
-                User user = _ur.GetUserByEmail(model.Email);
+                User user = _ur.GetUserByEmail(model.Username);
                 _ur.UpdateLastLogin(user);
                 if (model.Isremembered == true)
                 {
-                    FormsAuthentication.SetAuthCookie(model.Email, true);
+                    FormsAuthentication.SetAuthCookie(model.Username, true);
                     int x = 3;
                     return Json(new { x = x }, JsonRequestBehavior.AllowGet);
                 }
                 else
                 {
-                    Session["Email"] = model.Email;
+                    Session["Email"] = model.Username;
                     Session["Password"] = model.Password;
                     Session["Role"] = user.Role;
                     int x = 4;
                     return Json(new { x = x }, JsonRequestBehavior.AllowGet);
                 }
             }
+        }
+
+
+        [HttpPost]
+        public ActionResult SignUp(SignUpVM model)
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult ForgotPassword(ForgotPasswordVM model)
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult AgentProfile(UserProfile model)
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult TalentProfile(UserProfile model)
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult CrewProfile(UserProfile model)
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult LocationProfile(UserProfile model)
+        {
+            return View();
         }
 
 

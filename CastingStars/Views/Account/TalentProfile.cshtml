@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewBag.Title = "TalentProfile";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="col-md-12 profile-div">
+                <div>
+                    <div class="col-md-5">
+                        <img class="width-100" src="~/Content/images/homePerson.png" />
+                        <a class="profile-edit-img" href="#">@CastingStars.Resources.Resources.Profile_Edit_Picture</a>
+                    </div>
+                    <div class="col-md-7">
+                        <div>Test</div>
+                        <div class="profile-rating"><img src="~/Content/images/profileStar.png" /> 4.5/5</div>
+                        <div class="profile-progress">@CastingStars.Resources.Resources.Profile_Progress<span>60%</span></div>
+                        <div><img class="width-100" src="~/Content/images/profileProgress.png" /></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="profile-categories-div">
+                    <div class="profile-categories profile-categories-first"><a href="#test">@CastingStars.Resources.Resources.Profile_Personal_Information</a></div>
+                    <div class="profile-categories"><a href="#">@CastingStars.Resources.Resources.Profile_Professional_Type</a></div>
+                    <div class="profile-categories"><a href="#">@CastingStars.Resources.Resources.Profile_Professional_Information</a></div>
+                    <div class="profile-categories"><a href="#">@CastingStars.Resources.Resources.Profile_Pastwork</a></div>
+                    <div class="profile-categories"><a href="#">@CastingStars.Resources.Resources.Profile_Photo</a></div>
+                    <div class="profile-categories"><a href="#">@CastingStars.Resources.Resources.Profile_Video</a></div>
+                    <div class="profile-categories profile-categories-last"><a href="#">@CastingStars.Resources.Resources.Profile_Audio</a></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                <div class="profile-links"><a href="#">@CastingStars.Resources.Resources.Profile_Talent_Link</a></div>
+                <div class="profile-links"><a href="#">@CastingStars.Resources.Resources.Profile_Crew_Link</a></div>
+                <div class="profile-links"><a href="#">@CastingStars.Resources.Resources.Profile_Location_Link</a></div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="profile-warning"><i class="fa fa-warning"></i>@CastingStars.Resources.Resources.Profile_Warning</div>
+            <form id="login-form" method="post" action="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/agentprofile" class="login-form" novalidate="novalidate">
+                <div class="profile-form">
+                    <div class="col-md-12 profile-title-form-field">
+                        <strong>@CastingStars.Resources.Resources.Profile_Form_Title</strong>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="col-xs-12 profile-form-label">@CastingStars.Resources.Resources.Profile_Form_Name</label>
+                            <input id="Username" name="Username" type="text" class="profile-form-field">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="col-xs-12 profile-form-label">@CastingStars.Resources.Resources.Profile_Form_Surname</label>
+                            <input id="Username" name="Username" type="text" class="profile-form-field">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="col-xs-12 profile-form-label">@CastingStars.Resources.Resources.Profile_Form_Password</label>
+                            <input id="Username" name="Username" type="text" class="profile-form-field">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="col-xs-12 profile-form-label">@CastingStars.Resources.Resources.Profile_Form_Message</label>
+                            <textarea id="Username" name="Username" type="" class="profile-message-form-field"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-form">
+                    <div class="col-md-12 profile-title-form-field">
+                        <strong>@CastingStars.Resources.Resources.Profile_Form_Title</strong>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="col-xs-12 profile-form-label">@CastingStars.Resources.Resources.Profile_Form_Name</label>
+                            <input id="Username" name="Username" type="text" class="profile-form-field">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="col-xs-12 profile-form-label">@CastingStars.Resources.Resources.Profile_Form_Surname</label>
+                            <input id="Username" name="Username" type="text" class="profile-form-field">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="col-xs-12 profile-form-label">@CastingStars.Resources.Resources.Profile_Form_Password</label>
+                            <input id="Username" name="Username" type="text" class="profile-form-field">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="col-xs-12 profile-form-label">@CastingStars.Resources.Resources.Profile_Form_Message</label>
+                            <textarea id="Username" name="Username" class="profile-message-form-field"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-form-small">
+                    <div class="col-md-12 profile-title-form-field">
+                        <strong>@CastingStars.Resources.Resources.Profile_Form_Title</strong>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input id="Username" name="Username" type="text" class="profile-form-field-upload">
+                            <button class="profile-form-upload-button" type="submit">@CastingStars.Resources.Resources.Profile_Upload</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="test" class="profile-form">
+                    <div class="col-md-12 profile-title-form-field">
+                        <strong>@CastingStars.Resources.Resources.Profile_Form_Title</strong>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input id="Username" name="Username" type="text" class="profile-form-field-upload">
+                            <button class="profile-form-upload-button" type="submit">@CastingStars.Resources.Resources.Profile_Upload</button>
+                            <iframe id="videoFrame" width="200" height="200" style="margin-top: 30px;" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                            <div id="videoOverlay" class="overlay">
+                                <a class="overlay-external hidden" href="#"><i class="fa fa-external-link"></i></a>
+                                <a class="overlay-star hidden" href="#"><i class="fa fa-star"></i></a>
+                                <a class="overlay-close hidden" href="#"><i class="fa fa-close"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#videoFrame,.overlay").mouseenter(function () {
+            $(".overlay").toggle();
+            $("#videoOverlay a").removeClass("hidden");
+        }).mouseleave(function () {
+            $(".overlay").hide();
+            $("#videoOverlay a").addClass("hidden");
+        });
+    });
+</script>
+

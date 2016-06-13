@@ -11,6 +11,7 @@ namespace CastingStars.Controllers
         public ActionResult Index()
         {
             ViewBag.page = "home";
+            ViewBag.background = "body-bg-black";
             return View();
         }
     }

@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<div class="home">
+    <div class="container">
+        <div class="row row-centered login-main-div">
+            <div class="col-md-4 col-centered login-div no-padding">
+                <div class="login-border">
+                    <img class="login-logo-img" src="~/Content/images/loginLogo.png" />
+                </div>
+                <div id="lang" class="hide">
+                    <p>@CastingStars.Helpers.CultureHelper.GetCurrentCulture()</p>
+                </div>
+                <form id="login-form" method="post" action="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/login" class="login-form" novalidate="novalidate">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input placeholder="@CastingStars.Resources.Resources.Login_Username" id="Username" name="Username" type="text" class="full-width username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input placeholder="@CastingStars.Resources.Resources.Login_Password" id="Password" name="Password" type="password" class="full-width password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="checkbox checkbox-info">
+                                <input id="checkbox4" name="Isremembered" class="styled" type="checkbox">
+                                <label for="checkbox4">
+                                </label><div class="check-label">@CastingStars.Resources.Resources.Login_Remember</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group login-button-div">
+                        <button class="login-button" type="submit">@CastingStars.Resources.Resources.Login_Button</button>
+                    </div>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 col-centered login-links" style="padding: 0px">
+                <a class="login-link-register" href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/signup"><i class="fa fa-external-link"></i>@CastingStars.Resources.Resources.Login_Register</a>
+                <a class="login-link-forgot" href="/@CastingStars.Helpers.CultureHelper.GetCurrentCulture()/forgotpassword"><i class="fa fa-lock"></i>@CastingStars.Resources.Resources.Login_Forgot_pass</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+<script>
+    $("#login-form").validate({
+        ignore: [],
+        rules: {
+            Username: { required: true },
+            Password: { required: true }
+        },
+        errorPlacement: function (error, element) {
+            error.insertAfter(element.parent());
+        }
+    });
+
+    $("input").focusin(function () {
+        $(this).css("background-image", "none");
+    });
+
+    $("input").focusout(function () {
+        var lang = $("#lang p").text();
+        if (lang == "en")
+        {
+            var value = $(this).val();
+            if (value != "") {
+                $(this).css("background-image", "none");
+            } else {
+                if ($(this).attr("id") == "Username") {
+                    $(this).css("background", "url('/Content/images/avatar.png') no-repeat left");
+                    $(this).css("background-position", "14px");
+                } else if ($(this).attr("id") == "Password") {
+                    $(this).css("background", "url('/Content/images/key.png') no-repeat left");
+                    $(this).css("background-position", "14px");
+                }
+            }
+        }
+        if (lang == "ar") {
+            var value = $(this).val();
+            if (value != "") {
+                $(this).css("background-image", "none");
+            } else {
+                if ($(this).attr("id") == "username") {
+                    $(this).css("background", "url('/Content/images/avatar.png') no-repeat right");
+                    $(this).css("background-position", "250px");
+                } else if ($(this).attr("id") == "password") {
+                    $(this).css("background", "url('/Content/images/key.png') no-repeat right");
+                    $(this).css("background-position", "250px");
+                }
+            }
+        }
+        
+    });
+</script>
+

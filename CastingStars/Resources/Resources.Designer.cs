@@ -88,6 +88,69 @@ namespace CastingStars.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to RESET.
+        /// </summary>
+        public static string Forgot_Button {
+            get {
+                return ResourceManager.GetString("Forgot_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to crew.
+        /// </summary>
+        public static string Home_Crew {
+            get {
+                return ResourceManager.GetString("Home_Crew", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to our featured.
+        /// </summary>
+        public static string Home_Featured {
+            get {
+                return ResourceManager.GetString("Home_Featured", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to locations.
+        /// </summary>
+        public static string Home_Locations {
+            get {
+                return ResourceManager.GetString("Home_Locations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to more crew.
+        /// </summary>
+        public static string Home_More_Crew {
+            get {
+                return ResourceManager.GetString("Home_More_Crew", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to more locations.
+        /// </summary>
+        public static string Home_More_Locations {
+            get {
+                return ResourceManager.GetString("Home_More_Locations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to more talents.
+        /// </summary>
+        public static string Home_More_Talents {
+            get {
+                return ResourceManager.GetString("Home_More_Talents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home_Nav {
@@ -129,6 +192,15 @@ namespace CastingStars.Resources {
         public static string Home_Search_Text_3 {
             get {
                 return ResourceManager.GetString("Home_Search_Text_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to talents.
+        /// </summary>
+        public static string Home_Talents {
+            get {
+                return ResourceManager.GetString("Home_Talents", resourceCulture);
             }
         }
         
@@ -205,6 +277,60 @@ namespace CastingStars.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LOGIN.
+        /// </summary>
+        public static string Login_Button {
+            get {
+                return ResourceManager.GetString("Login_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forgot Password.
+        /// </summary>
+        public static string Login_Forgot_pass {
+            get {
+                return ResourceManager.GetString("Login_Forgot_pass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string Login_Password {
+            get {
+                return ResourceManager.GetString("Login_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register Now.
+        /// </summary>
+        public static string Login_Register {
+            get {
+                return ResourceManager.GetString("Login_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remember Me.
+        /// </summary>
+        public static string Login_Remember {
+            get {
+                return ResourceManager.GetString("Login_Remember", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        public static string Login_Username {
+            get {
+                return ResourceManager.GetString("Login_Username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Logout.
         /// </summary>
         public static string Logout_User {
@@ -255,6 +381,213 @@ namespace CastingStars.Resources {
         public static string Privacy_Policy {
             get {
                 return ResourceManager.GetString("Privacy_Policy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Agent Profile.
+        /// </summary>
+        public static string Profile_Agency_Link {
+            get {
+                return ResourceManager.GetString("Profile_Agency_Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Audio Player.
+        /// </summary>
+        public static string Profile_Audio {
+            get {
+                return ResourceManager.GetString("Profile_Audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crew Profile.
+        /// </summary>
+        public static string Profile_Crew_Link {
+            get {
+                return ResourceManager.GetString("Profile_Crew_Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Profile Picture.
+        /// </summary>
+        public static string Profile_Edit_Picture {
+            get {
+                return ResourceManager.GetString("Profile_Edit_Picture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        public static string Profile_Form_Message {
+            get {
+                return ResourceManager.GetString("Profile_Form_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string Profile_Form_Name {
+            get {
+                return ResourceManager.GetString("Profile_Form_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string Profile_Form_Password {
+            get {
+                return ResourceManager.GetString("Profile_Form_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Surname.
+        /// </summary>
+        public static string Profile_Form_Surname {
+            get {
+                return ResourceManager.GetString("Profile_Form_Surname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BASIC FORM.
+        /// </summary>
+        public static string Profile_Form_Title {
+            get {
+                return ResourceManager.GetString("Profile_Form_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location Profile.
+        /// </summary>
+        public static string Profile_Location_Link {
+            get {
+                return ResourceManager.GetString("Profile_Location_Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Past Work (Portfolio).
+        /// </summary>
+        public static string Profile_Pastwork {
+            get {
+                return ResourceManager.GetString("Profile_Pastwork", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personal Information.
+        /// </summary>
+        public static string Profile_Personal_Information {
+            get {
+                return ResourceManager.GetString("Profile_Personal_Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photo Gallery.
+        /// </summary>
+        public static string Profile_Photo {
+            get {
+                return ResourceManager.GetString("Profile_Photo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Professional Information.
+        /// </summary>
+        public static string Profile_Professional_Information {
+            get {
+                return ResourceManager.GetString("Profile_Professional_Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Professional Type.
+        /// </summary>
+        public static string Profile_Professional_Type {
+            get {
+                return ResourceManager.GetString("Profile_Professional_Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile Progress.
+        /// </summary>
+        public static string Profile_Progress {
+            get {
+                return ResourceManager.GetString("Profile_Progress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Talent Profile.
+        /// </summary>
+        public static string Profile_Talent_Link {
+            get {
+                return ResourceManager.GetString("Profile_Talent_Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload.
+        /// </summary>
+        public static string Profile_Upload {
+            get {
+                return ResourceManager.GetString("Profile_Upload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Video Reel.
+        /// </summary>
+        public static string Profile_Video {
+            get {
+                return ResourceManager.GetString("Profile_Video", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning Message.
+        /// </summary>
+        public static string Profile_Warning {
+            get {
+                return ResourceManager.GetString("Profile_Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to REGISTER.
+        /// </summary>
+        public static string Register_Button {
+            get {
+                return ResourceManager.GetString("Register_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Password.
+        /// </summary>
+        public static string Register_Confirm {
+            get {
+                return ResourceManager.GetString("Register_Confirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        public static string Register_Email {
+            get {
+                return ResourceManager.GetString("Register_Email", resourceCulture);
             }
         }
         
